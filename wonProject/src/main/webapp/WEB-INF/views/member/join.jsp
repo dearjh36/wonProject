@@ -5,70 +5,30 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="/resources/css/member/join.css">
+<script>
+
+$(document).ready(function(){
+	//회원가입 버튼(회원가입 기능 작동)
+	$(".join_button").click(function(){
+		$("#join_form").attr("action", "/member/join");
+		$("#join_form").submit();
+	});
+});
+
+</script>
 </head>
 <body>
 
-	<div class="wrapper">
-		<form action="">
-			<div class="wrap">
-				<div class="subjecet">
-					<span>회원가입</span>
-				</div>
-				<div class="id_wrap">
-					<div class="id_name">아이디</div>
-					<div class="id_input_box">
-						<input class="id_input">
-					</div>
-				</div>
-				<div class="pw_wrap">
-					<div class="pw_name">비밀번호</div>
-					<div class="pw_input_box">
-						<input class="pw_input">
-					</div>
-				</div>
-				<div class="pwck_wrap">
-					<div class="pwck_name">비밀번호 확인</div>
-					<div class="pwck_input_box">
-						<input class="pwck_input">
-					</div>
-				</div>
-				<div class="user_wrap">
-					<div class="user_name">이름</div>
-					<div class="user_input_box">
-						<input class="user_input">
-					</div>
-				</div>
-				<div class="mail_wrap">
-					<div class="mail_name">이메일</div>
-					<div class="mail_input_box">
-						<input class="mail_input">
-					</div>
-				</div>
-				<div class="address_wrap">
-					<div class="address_name">주소</div>
-					<div class="address_input_1_wrap">
-						<div class="address_input_1_box">
-							<input class="address_input_1">
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="address_input_2_wrap">
-						<div class="address_input_2_box">
-							<input class="address_input_2">
-						</div>
-					</div>
-					<div class="address_input_3_wrap">
-						<div class="address_input_3_box">
-							<input class="address_input_3">
-						</div>
-					</div>
-				</div>
-				<div class="join_button_wrap">
-					<input type="button" class="join_button" value="가입하기">
-				</div>
-			</div>
-		</form>
-	</div>
+	<form action="post" id="join_form">
+		<span>회원가입</span> 
+		아이디	<input class="id_input" name="Id"> 
+		비밀번호	<input class="pw_input" name="m_pw">
+		이름 	<input class="user_input" name="m_name"> 
+		이메일 	<input class="mail_input" name="m_email"> 
+		전화번호	<input class="phone_input" name="m_phone"> 
+		생일		<input class="birth_input" name="m_birth"> 
+		<input type="button" class="join_button" value="가입하기">
+
+	</form>
 </body>
 </html>
