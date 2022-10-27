@@ -1,8 +1,4 @@
 package com.won.mapper;
-/*
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Date;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,7 +23,7 @@ public class MemberMapperTest {
 
 		member.setId("test");
 		member.setM_name("test");
-		//member.setM_birth("2022-10-20");
+		member.setM_birth("test");
 		member.setM_pw("test");
 		member.setM_phone("test");
 		member.setM_email("test");
@@ -39,4 +35,3 @@ public class MemberMapperTest {
 
 
 }
-*/

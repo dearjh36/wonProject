@@ -5,7 +5,7 @@ import java.util.Date;
 public class MemberVO {
 	private String id;
 	private String m_name;
-	private Date m_birth;
+	private String m_birth;
 	private String m_pw;
 	private String m_phone;
 	private String m_email;
@@ -23,11 +23,11 @@ public class MemberVO {
 	public void setM_name(String m_name) {
 		this.m_name = m_name;
 	}
-	public Date getM_birth() {
+	public String getM_birth() {
 		return m_birth;
 	}
-	public void setM_birth(Date string) {
-		this.m_birth = string;
+	public void setM_birth(String m_brith) {
+		this.m_birth = m_brith;
 	}
 	public String getM_pw() {
 		return m_pw;
